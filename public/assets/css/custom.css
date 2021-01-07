@@ -1,0 +1,128 @@
+body,nav,li,a,h1,h2,h3,h4,h5,h6,p,ul,section,figure,html,header,footer{
+
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.loader {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #1e1d1d82;
+    z-index: 100;
+}
+
+.overlay__inner {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.overlay__content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner {
+    width: 120px;
+  height: 120px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #EC1B23;
+    display: inline-block;
+  /*  border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-top-color: #fff;*/
+    animation: spin 1s infinite linear;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #EC1B23  !important;;
+}
+
+
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  width: 100%;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 12px;
+  height: 39px!important;
+  width:calc(100% - 26px);
+}
+
+.upload-btn-wrapper .btnr {
+    border: none;
+    color: #ffff;
+    background-color: #1175A4;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+.upload-btn-wrapper .btnr + span {
+  padding: 5px;
+  font-weight: normal;
+  }
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 42px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
